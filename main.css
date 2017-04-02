@@ -1,0 +1,11 @@
+.top-nav, .contact{
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
+
+img {
+    display: block;
+}
