@@ -1,78 +1,130 @@
 <html>
 <head>
-  <title>Dave Hoel</title>
-  <meta name="description" content="Dave Hoel - portfolio page">
-  <link rel="stylesheet" href="./main.css">
+  <title>Dave Hoel web dev portfolio</title>
+  <meta name='description' content='Dave Hoel - portfolio page'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' type='text/css'
+        href='https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css'>
+  <link rel='stylesheet' type='text/css' href='main.css'>
+  <link rel='stylesheet'
+        href='https://fonts.googleapis.com/css?family=Fira+Sans|Fira+Sans+Condensed'>
+  <script src='https://use.fontawesome.com/272eaf191a.js'></script>
 </head>
 <body>
-  <header>
-    <h6>domain name: davehoel.com</h6>
-    <h1>Dave Hoel</h1>
-  </header>
-  <nav>
-      <ul class='top-nav'>
-          <li> <a href="#about">About</a> </li>
-          <li> <a href="#projects">Projects</a> </li>
-          <li> <a href="#contact">Contact</a> </li>
-      </ul>
-  </nav>
-  <main>
-    <section id='about'>
+  <header class='header'>
+    <section id='personal-info' class='intro'>
+        <h1>Dave Hoel</h1>
+        <h5>*web developer for hire</h5>
+        <h4 id='locale'>Phoenix, Arizona</h4>
+        <div id='social'>
+            <a href='mailto:dkhoel@gmail.com'>
+                <span class='fa fa-envelope fa-3x'/>
+            </a>
+            <a href='https:/www.github.com/dhoel'>
+                <span class='fa fa-github fa-3x'>
+            </a>
+            <a href='https:/www.linkedin.com/in/davehoel'>
+                <span class='fa fa-linkedin-square fa-3x'>
+            </a>
+        </div>
+    </section>
+    <section id='about' class='intro'>
       <h4>Hey There!</h4>
 
-      <p>My name's Dave, and I've recently altered my career trajectory.
-          Well, sort of. After nearly 16 years of working in IT, I wanted to do
-          something completely different, I thought. Turns out I really just
-          wanted to do something different within technology, something more
-          creative, more engaging.
-
-          ...to be continued
+      <p>I'm Dave, a full stack web developer. My background's in IT management
+         and infrastructure, but I found myself wanting a different
+         challenge. Coding was the answer. I really enjoy the creative problem
+         solving process, and it's really satisfying to build an app and watch
+         it function the way you intended. When I'm not coding you'll find me
+         on a trail somewhere hiking or biking, or helping my son with the never
+         ending project that is his Jeep.
       </p>
     </section>
-    <section id='projects'>
-      <h4>Projects</h4>
-      <div>Max Rewards
-          <img src="" alt="Max Rewards screenshot">
-          <span>Demo link |</span>
-          <span> Code link</span>
-      </div>
-      <div> <br></div>
-      <div>Project 2
-          <img src="" alt="Project 2 screenshot">
-          <span>Demo link |</span>
-          <span> Code link</span>
-      </div>
-      <div> <br></div>
-      <div>Project 3
-          <img src="" alt="Project 3 screenshot">
-          <span>Demo link |</span>
-          <span> Code link</span>
-      </div>
-      <div> <br></div>
-      <div>Project 4
-          <img src="" alt="Project 4 screenshot">
-          <span>Demo link|</span>
-          <span> Code link</span>
-      </div>
-    </section>
-    <section id='contact'>
-      <h4>Contact me</h4>
-          <ul class='contact'>
-              <li>
-                  <a href="mailto:dkhoel@gmail.com">dkhoel@gmail.com</a>
-              </li>
-              <li>
-                  <a href="https://www.linkedin.com/in/davehoel">LinkedIn</a>
-              </li>
-              <li>
-                  <a href="https://github.com/dhoel">GitHub</a>
-              </li>
-          </ul>
+  </header>
 
-    </section>
+  <main>
+
+    <div id='projects'>
+      <h2>Projects</h2>
+      <section id='max-rewards' class='project-block'>
+          <summary class='proj-summary left'>
+              <h3 class='proj-title'>Max Rewards</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <div>links to app and github go here</div>
+          </summary>
+          <div class='proj-screenshot right'>
+              <img src='images/max-rewards.jpg' alt='Max Rewards screenshot'>
+              <div class='proj-tech'>Project technology</div>
+          </div>
+      </section>
+      <div> <br></div>
+      <section id='logical-fall-x' class='project-block'>
+          <div class='proj-screenshot left'>
+              <img src='images/logical-fall.jpg' alt='Logical Fallacy screenshot'>
+              <div class='proj-tech'>Project technology</div>
+          </div>
+          <summary class='proj-summary right'>
+              <h3 class='proj-title'>Logical Fallacy X</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <div>links to app and github go here</div>
+          </summary>
+      </section>
+      <div> <br></div>
+      <section id='capstone' class='project-block'>
+          <summary class='proj-summary left'>
+              <h3 class='proj-title'>Capstone</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <div>links to app and github go here</div>
+          </summary>
+          <div class='proj-screenshot right'>
+              <img src='images/capstone.jpg' alt='Capstone screenshot'>
+              <div class='proj-tech'>Project technology</div>
+          </div>
+      </section>
+      <div> <br></div>
+      <section id='project-4' class='project-block'>
+          <div class='proj-screenshot left'>
+              <img src='images/project-4.jpg' alt='Project 4 screenshot'>
+              <div class='proj-tech'>Project technology</div>
+          </div>
+          <summary class='proj-summary right'>
+              <h3 class='proj-title'>Project 4</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <div>links to app and github go here</div>
+          </summary>
+      </section>
+  </div>
+
   </main>
-<footer>
 
-</footer>
+  <footer class='footer'>
+    <section id='label' class='contact'>
+      <h4>Learn more</h4>
+    </section>
+    <section id='social' class='contact'>
+      <a href='mailto:dkhoel@gmail.com'>
+          <span class='fa fa-envelope fa-3x'/>
+      </a>
+      <a href='https:/www.github.com/dhoel'>
+          <span class='fa fa-github fa-3x'>
+      </a>
+      <a href='https:/www.linkedin.com/in/davehoel'>
+          <span class='fa fa-linkedin-square fa-3x'>
+      </a>
+
+    </section>
+  </footer>
 </body>
 </html>

@@ -1,9 +1,5 @@
-.top-nav, .contact{
-    list-style: none;
-}
-
-li {
-    display: inline;
+* {
+    box-sizing: border-box;
 }
 
 img {
