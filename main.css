@@ -1,7 +1,132 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    /*color: #EBF5EE;*/
+    /*background-color: #FFFFFF;*/
+
+}
+header {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100 0px;
+    display: flex;
+
+}
+#personal-info {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    max-width: 35%;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+#social {
+    width: 10rem;
+    margin: 0 auto;
+
+}
+#about {
+    font-family: 'Fira Sans', sans-serif;
+    display: inline-block;
+    width: 100%;
+    max-width: 55%;
+}
+header h4 {
+    margin: 10px;
+}
+h1 {
+    margin: 20px 0px 5px;
+}
+#locale {
+    margin: 5px 0px;
+}
+#projects {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+#projects .project-block {
+    display: flex;
+    align-items: center;
+}
+main h2 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+
+}
+.proj-title {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    display: inline-block;
+}
+.proj-screenshot .proj-summary {
+    width: 100%;
+    max-width: 45%;
+}
+.right {
+    margin-left: 5%;
+}
+.left {
+    margin-right: 5%;
+}
+main p {
+    font-family: 'Fira Sans', sans-serif;
+}
+footer {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+footer h4 {
+    font-family: 'Fira Sans Condensed', sans-serif;
 }
 
-img {
-    display: block;
+@media (max-width: 860px) {
+    header {
+        display: block;
+    }
+    #personal-info {
+        display: block;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    #about {
+        display: block;
+        max-width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    main h2 {
+        text-align: center;
+    }
+    .project-block {
+        flex-direction: column;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .proj-summary {
+        max-width: 100%;
+        order: 2;
+    }
+    .proj-screenshot {
+        max-width: 100%;
+    }
+    .right {
+        margin-left: 0;
+    }
+    .left {
+        margin-right: 0;
+    }
+}
+@media (max-width: 550px) {
+    #about {
+        max-width: 90%;
+    }
+    .project-block {
+        max-width: 90%;
+    }
+    .proj-title {
+        text-align: center;
+    }
 }
