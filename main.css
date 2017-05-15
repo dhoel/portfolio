@@ -5,16 +5,17 @@
 html, body {
     height: 100%;
     /*color: #EBF5EE;*/
-    /*background-color: #FFFFFF;*/
-
+    background-color: #273E47;
+}
+main {
+  background-color: #D8973C
 }
 header {
     max-width: 1000px;
     width: 100%;
-    margin: 0 auto;
-    padding: 100 0px;
+    margin: 50 auto;
     display: flex;
-
+    color: #FFFAFF
 }
 #personal-info {
     display: inline-block;
@@ -23,38 +24,48 @@ header {
     max-width: 35%;
     font-family: 'Fira Sans Condensed', sans-serif;
 }
-#social {
+#personal-info h1 {
+  color: #D8973C
+}
+.social {
     width: 10rem;
-    margin: 0 auto;
-
+    margin: 0 auto 10px;
+}
+.social a {
+  color: #A4243B
 }
 #about {
     font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
     display: inline-block;
     width: 100%;
     max-width: 55%;
 }
-header h4 {
+header .greeting {
     margin: 10px;
+    font-weight: 200;
 }
 h1 {
-    margin: 20px 0px 5px;
+    margin: 10px 0px;
 }
 #locale {
     margin: 5px 0px;
 }
-#projects {
+#projects-group {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
 }
-#projects .project-block {
+#projects-group .project-block {
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
 }
-main h2 {
+#projects-header {
     font-family: 'Fira Sans Condensed', sans-serif;
-
+    text-align: center;
+    margin-bottom: 25px;
+    padding-top: 25px;
 }
 .proj-title {
     font-family: 'Fira Sans Condensed', sans-serif;
@@ -70,6 +81,18 @@ main h2 {
 .left {
     margin-right: 5%;
 }
+#project-4 {
+  margin-bottom: 0px;
+  padding-bottom: 50px;
+}
+.project-tech {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-style: italic;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
 main p {
     font-family: 'Fira Sans', sans-serif;
 }
@@ -81,8 +104,10 @@ footer {
 footer h4 {
     font-family: 'Fira Sans Condensed', sans-serif;
 }
-
-@media (max-width: 860px) {
+#footer-name {
+  margin-bottom: 25px;
+}
+@media (max-width: 1020px) {
     header {
         display: block;
     }
@@ -93,12 +118,13 @@ footer h4 {
     }
     #about {
         display: block;
-        max-width: 70%;
+        width: 450px;
+        max-width: 100%;
         text-align: center;
         margin: 0 auto;
     }
-    main h2 {
-        text-align: center;
+    #about .greeting {
+      margin-top: 50px
     }
     .project-block {
         flex-direction: column;
@@ -106,6 +132,7 @@ footer h4 {
         margin: 0 auto;
     }
     .proj-summary {
+        width: 450px;
         max-width: 100%;
         order: 2;
     }
@@ -129,4 +156,18 @@ footer h4 {
     .proj-title {
         text-align: center;
     }
+}
+@media (max-width: 450px) {
+  header {
+    margin: 50px auto;
+  }
+  #about {
+      max-width: 80%;
+  }
+  .project-screenshot {
+      max-width: 80%;
+  }
+  .proj-title {
+      text-align: center;
+  }
 }
