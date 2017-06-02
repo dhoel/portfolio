@@ -1,21 +1,24 @@
 * {
     box-sizing: border-box;
     margin: 0;
+
 }
 html, body {
     height: 100%;
-    /*color: #EBF5EE;*/
-    background-color: #273E47;
+    background-color: #3A4F57;
 }
 main {
-  background-color: #D8973C
+  background-color: #DBA04D;
 }
 header {
     max-width: 1000px;
     width: 100%;
     margin: 50 auto;
     display: flex;
-    color: #FFFAFF
+    color: #F6F6F6
+}
+header h5 {
+  letter-spacing: .4px;
 }
 #personal-info {
     display: inline-block;
@@ -28,11 +31,19 @@ header {
   color: #D8973C
 }
 .social {
-    width: 10rem;
-    margin: 0 auto 10px;
+    width: 15rem;
+    margin: 10 auto;
 }
 .social a {
   color: #A4243B
+}
+.social span {
+  padding: 0 5px;
+}
+.social span:hover {
+  color: #871E31;
+  cursor: hand;
+  cursor: pointer;
 }
 #about {
     font-family: 'Fira Sans', sans-serif;
@@ -41,8 +52,8 @@ header {
     width: 100%;
     max-width: 55%;
 }
-header .greeting {
-    margin: 10px;
+#about .greeting {
+    margin: 10px 0;
     font-weight: 200;
 }
 h1 {
@@ -63,9 +74,10 @@ h1 {
 }
 #projects-header {
     font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 200%;
     text-align: center;
-    margin-bottom: 25px;
-    padding-top: 25px;
+    margin-bottom: 40px;
+    padding-top: 30px;
 }
 .proj-title {
     font-family: 'Fira Sans Condensed', sans-serif;
@@ -99,10 +111,10 @@ main p {
 footer {
     max-width: 70%;
     margin: 0 auto;
-    text-align: center;
-}
-footer h4 {
     font-family: 'Fira Sans Condensed', sans-serif;
+    text-align: center;
+    color: #F6F6F6;
+    letter-spacing: .5px;
 }
 #footer-name {
   margin-bottom: 25px;
@@ -124,7 +136,7 @@ footer h4 {
         margin: 0 auto;
     }
     #about .greeting {
-      margin-top: 50px
+      margin: 50px 0 10px;
     }
     .project-block {
         flex-direction: column;
