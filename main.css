@@ -2,24 +2,28 @@
   box-sizing: border-box;
   margin: 0;
 }
+
 html, body {
   height: 100%;
   background-color: #3A4F57;
 }
+
 main {
-  height: 1200px;
   background-color: #DBA04D;
 }
+
 header {
-  max-width: 1000px;
-  width: 100%;
-  margin: 50 auto;
+  max-width: 1200px;
+  width: 90%;
+  margin: 50px auto;
   display: flex;
   color: #F6F6F6
 }
+
 header h5 {
-  letter-spacing: .4px;
+  letter-spacing: .5px;
 }
+
 #personal-info {
   display: inline-block;
   text-align: center;
@@ -27,51 +31,62 @@ header h5 {
   max-width: 35%;
   font-family: 'Fira Sans Condensed', sans-serif;
 }
+
 #personal-info h1 {
   color: #D8973C
 }
+
 .social {
   width: 15rem;
-  margin: 10 auto;
+  margin: 10px auto;
 }
+
 .social a {
   color: #A4243B
 }
+
 .social span {
   padding: 0 5px;
 }
+
 .social span:hover {
   color: #871E31;
-  cursor: hand;
   cursor: pointer;
 }
-#about {
+
+.intro {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 200;
   display: inline-block;
   width: 100%;
   max-width: 55%;
 }
-#about .greeting {
+
+#intro .greeting {
   margin: 10px 0;
   font-weight: 200;
 }
+
 h1 {
   margin: 10px 0px;
 }
+
 #locale {
   margin: 5px 0px;
 }
+
 #projects-group {
-  max-width: 1000px;
-  width: 100%;
+  max-width: 1150px;
+  width: 90%;
   margin: 0 auto;
 }
+
 #projects-group .project-block {
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
+  padding-bottom: 75px;
 }
+
 #projects-header {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 200%;
@@ -81,26 +96,31 @@ h1 {
   padding: 30px 0;
   /*background-color: #A4243B;*/
 }
+
 .proj-title {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 135%;
   display: inline-block;
   margin-bottom: 10px;
 }
+
 .proj-screenshot .proj-summary {
     width: 100%;
     max-width: 45%;
 }
+
 .right {
-  margin-left: 5%;
+  margin-left: 10%;
 }
+
 .left {
-  margin-right: 5%;
+  margin-right: 8%;
 }
-#project-4 {
-  margin-bottom: 0px;
+
+/*#logical-fallacy {
   padding-bottom: 50px;
-}
+}*/
+
 .project-tech {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-style: italic;
@@ -109,9 +129,11 @@ h1 {
   margin-top: 5px;
   margin-bottom: 10px;
 }
+
 main p {
-    font-family: 'Fira Sans', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
+
 footer {
   max-width: 70%;
   margin: 0 auto;
@@ -121,56 +143,58 @@ footer {
   letter-spacing: .5px;
   margin: 30px auto;
 }
-/*#footer-name {
-  margin-bottom: 25px;
-}*/
+
 @media (max-width: 1020px) {
   header {
       display: block;
   }
-  main {
-    height: 1700px;
-  }
   #personal-info {
-      display: block;
-      max-width: 80%;
-      margin: 0 auto;
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
   }
-  #about {
-      display: block;
-      width: 450px;
-      max-width: 100%;
-      text-align: center;
-      margin: 0 auto;
+  .intro {
+    display: block;
+    max-width: 95%;
+    text-align: center;
+    margin: 0 auto;
   }
-  #about .greeting {
+  #intro .greeting {
     margin: 50px 0 10px;
   }
   .project-block {
-      flex-direction: column;
-      max-width: 80%;
-      margin: 0 auto;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
   }
   .proj-summary {
-      width: 450px;
-      max-width: 100%;
-      order: 2;
+    width: 450px;
+    max-width: 100%;
+    order: 2;
   }
   .proj-screenshot {
-      max-width: 90%;
+    max-width: 90%;
   }
   .right {
-      margin-left: 0;
+    margin-left: 0;
   }
   .left {
-      margin-right: 0;
+    margin-right: 0;
   }
 }
+
+@media (max-width: 650px) {
+  .proj-screenshot>img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
 @media (max-width: 550px) {
   main {
     width: 100%;
   }
-  #about {
+  .about {
       max-width: 90%;
   }
   .project-block {
@@ -181,19 +205,5 @@ footer {
   }
   .proj-title {
       text-align: center;
-  }
-}
-@media (max-width: 485px) {
-  main {
-    height: 1755px;
-  }
-}
-@media (max-width: 450px) {
-  main {
-    height: 1700px;
-  }
-  .proj-screenshot>img {
-    max-width: 100%;
-    max-height: 100%;
   }
 }
